@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(198,239,200);
+    height: 100vh;
+    background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size: 1rem;
+    font-family: sans-serif;
+} 
+.container{
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  h2 span{
+    font-weight:800;
+    height: 26px;
+  }
+  img{
+    width: 400px;
+    height: 400px;
+  }
+  .content{
+    max-width: 330px;
+    /* background-color: red; */
+    margin-left: 120px;
+  }
+  .wheel{
+    /* background-color: black; */
+    padding: auto;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  button{
+    cursor: pointer;
+    background-color: rgb(20,101,49);
+    font-weight: bolder;
+    color: #fff;
+    border-radius: 50px;
+    margin: 10px 0px;
+    height: 55px;
+    font-size: 1.4rem;
+  }
+  .inps{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin-bottom: 11px;
+    padding: 2px;
+
+  }
+  .cntn{
+    cursor: grab;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+  }
+  .inps input{
+    border: none;
+  }
+  .agreement{
+    font-size: 0.8rem;
+    border: solid black 1px;
+  }
