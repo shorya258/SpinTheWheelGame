@@ -1,18 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Public+Sans:wght@600&display=swap');*{
     padding: 0;
-    margin: 0;
+    margin: 0 ;
 }
-body{
+.container{
     background-color: rgb(198,239,200);
-    height: 100vh;
+    height: 100vh !important;
+    width: 100vw !important;
     background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
     background-repeat:no-repeat;
     background-size:cover;
     font-size: 1rem;
-    font-family: sans-serif;
-} 
-.container{
+    font-family: 'Poppins', sans-serif;;
     display: flex;
     justify-content:center;
     flex-direction: row;
@@ -21,7 +19,7 @@ body{
     height: 100vh;
   }
   h2 span{
-    font-weight:800;
+    font-weight:bolder;
     height: 26px;
   }
   img{
@@ -34,14 +32,17 @@ body{
     margin-left: 120px;
   }
   .wheel{
-    /* background-color: black; */
+    animation: rotateWheel 5s;
     padding: auto;
+  }
+  .mobilewheel{
+    display: none;
   }
   form{
     display: flex;
     flex-direction: column;
   }
-  button{
+  .luckBtn {
     cursor: pointer;
     background-color: rgb(20,101,49);
     font-weight: bolder;
@@ -50,14 +51,25 @@ body{
     margin: 10px 0px;
     height: 55px;
     font-size: 1.4rem;
+    text-decoration: none;
+  }
+  .luckBtn a{
+    font-weight: bolder;
+    color: #fff;
+    padding-top: 20% !important;
+    margin-top: 25%;
+    margin-left: 28%;
+    text-decoration: none;
   }
   .inps{
     display: flex;
     flex-direction: row;
     background-color: #fff;
     margin-bottom: 11px;
-    padding: 2px;
-
+    padding: 3px;
+  }
+  .inps>div{
+    margin: 2px;
   }
   .cntn{
     cursor: grab;
@@ -71,4 +83,34 @@ body{
   .agreement{
     font-size: 0.8rem;
     border: solid black 1px;
+  }
+
+  @media screen and (max-width:750px) {
+    .container{
+        background-image: url("./images/mobile-design1.png"),url("./images/mobile-design.png") !important;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: hidden;
+        flex-wrap: wrap;
+        font-weight: bolder;
+    }
+    .content{
+        margin: 18% 8% ;
+        max-width: 80%;
+    }
+    .wheel{
+        display: none;
+    }
+    .mobilewheel{
+        display: contents;
+    }
+    .mobilewheel img{
+        height:180px;
+        width: 200px;
+    }
+    .agreement{
+        padding: 4px;
+    }
   }

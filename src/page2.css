@@ -2,20 +2,54 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: rgb(198,239,200);
-}
-.container{
+.div-wrapper{
+    /* background-color: rgb(198,239,200); */
+    background-color: rebeccapurple;
+    height: 100vh !important;
+    width: 100vw !important;
+    background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size: 1rem;
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
+.wheel img{
+    width: auto;
+ }
+ .wheel{
+    
+    outline: solid 1px black;
+} 
 button{
+    cursor: pointer;
+    background-color: rgb(20,101,49);
+    color: #fff;
     width: 200px;
     height: 65px;
     font-size: 2rem;
     border: none;
     border-radius: 100px;
+}
+.start-rotate{
+    animation: start-rotate 1s linear infinite;
+}
+@keyframes start-rotate{
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.stop-rotate{
+    animation-play-state:paused;
+    
+}
+.confetti{
+    height:100vh;
+    width: 100vw;
+    position: absolute;
 }
