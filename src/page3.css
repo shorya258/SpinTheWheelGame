@@ -1,12 +1,12 @@
 .box{
     flex-wrap: wrap;
     justify-content: space-evenly;
+
 }
 .coupon{
     display:flex;
     flex-direction: column;
     width: 500px;
-    outline: 1px solid black;
 }
 .coupon div p{
     text-align: center;
@@ -24,21 +24,27 @@
     justify-content: center;
     font-size: 2rem !important;
     width: 100%;
+    padding: 2px 0px;
 }
 .myCode{
     height: auto;
     background-color: rgb(162,195,164);
     display: flex;
-    color: #fff; ;
     width: 70%;
     justify-content: center;
     align-items: center;
+}
+.myCode p{
+    color: #fff; 
+    font-weight: 800;
+    padding: 7px 0px;
 }
 .myCopyBtn{
     width:30%;
 }
 .myCopyBtn button{
     width: 100%;
+    padding: 11px 0px !important;
 }
 .copyBtn {
     background-color: rgb(20,101,49) !important;
@@ -46,9 +52,10 @@
     display: flex;
 
 }
-
-.coupon div span{
-    font-size: 0.8rem;
+.congoMsg{
+    font-size: 1.2rem;
+    font-weight: 800;
+    color:rgb(46, 46, 46)
 }
 .close{
     border-radius: 30px !important;

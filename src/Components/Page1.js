@@ -1,6 +1,7 @@
 import React from "react";
 import "../page1.css";
 import wheel from "../images/well 2.png";
+import tabletWheel from "../images/medWheel.png";
 import mobilewheel from "../images/mobilewell.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMediaQuery } from "react-responsive";
@@ -10,9 +11,12 @@ import { useHistory } from "react-router-dom";
 const Page1 = () => {
   let history = useHistory();
   const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
+    query: "(max-width: 5554px)",
   });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
+  const isTablet = useMediaQuery({
+    query: "(max-width: 1180px)",
+  });
+  const isMobile = useMediaQuery({ query: "(max-width: 500px)" });
   return (
     <>
       <div className="container">
@@ -21,8 +25,13 @@ const Page1 = () => {
             <img src={wheel} className="bigWheel" alt="spin-wheel"></img>
           )}
         </div>
+        <div className="tabletWheel">
+          {isTablet && (
+            <img src={tabletWheel} className="medWheel" alt="spin-wheel"></img>
+          )}
+        </div>
         <div className="mobilewheel">
-          {isTabletOrMobile && (
+          {isMobile && (
             <img
               src={mobilewheel}
               className="smallWheel"
@@ -62,6 +71,7 @@ const Page1 = () => {
                 I agree to recieve recurring automated messages at the number I
                 have provided.
               </span>
+              <br />
               <span>Consent is not a condition to purchase. </span>
             </div>
 
@@ -69,6 +79,14 @@ const Page1 = () => {
               <button onClick={() => history.push("/page2")}>
                 Try your luck
               </button>
+            </div>
+            <div>
+              <p>
+                <i>
+                  *You can spin the wheel only once! *If you win, you can claim
+                  your coupon only for 10 minutes.
+                </i>
+              </p>
             </div>
           </form>
         </div>

@@ -34,7 +34,7 @@ const Page3 = (props) => {
         )}
       </div>
       <div className="coupon">
-        <div>
+        <div className="congoMsg">
           <p>Congrats you have won:</p>
         </div>
         <h2> {location.state.result}</h2>
@@ -60,9 +60,9 @@ const Page3 = (props) => {
           Close panel and copy
         </Button>
         <div>
-          <span>
+          <p>
             <i>* you can claim discount only for 10 minutes</i>
-          </span>
+          </p>
         </div>
       </div>
     </div>

@@ -33,7 +33,9 @@
     animation: rotateWheel 5s;
     padding: auto;
   }
-  .mobilewheel{
+  .tabletWheel{
+    display: none;
+  }  .mobilewheel{
     display: none;
   }
   form{
@@ -55,7 +57,7 @@
     text-decoration: none;
     height: 100%;
   }
-  .inps{
+  .parameter{
     display: flex;
     flex-direction: row;
     background-color: #fff;
@@ -74,15 +76,51 @@
     padding: 2px;
     flex-direction: column;
   }
-  .inps input{
+  .parameter input{
     border: none;
   }
   .agreement{
-    font-size: 0.8rem;
-    border: solid black 1px;
+    font-size: 0.83rem;
+    border: solid black 2px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align:center;
   }
+  .agreement >span{
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+  form div p{
+    margin-top: 2rem;
+    font-size: 0.7em;
+    color: rgb(46, 46, 46);
+  }
+  @media screen and (max-width:850px) and (min-width:650px) {
+    .mobilewheel{
+      display: none;
+    }
+    .wheel{
+      display: none;
+    }
+    .tabletWheel{
+      display: contents;
+    }
+    .tabletWheel img{
+      width: 30%;
+    }
+    .container{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .content{
+      margin-right: auto;
+      margin-left: auto;
+    }
 
-  @media screen and (max-width:750px) {
+  }
+  @media screen and (max-width:650px) {
     .container{
       background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
       background-size: 100%;
@@ -94,11 +132,14 @@
       font-weight: bolder;
     }
     .content{
-        margin: 18% 8% ;
+        margin: 9% 8% ;
         max-width: 80%;
     }
     .wheel{
         display: none;
+    }
+    .tabletWheel{
+      display: none;
     }
     .mobilewheel{
         display: contents;
