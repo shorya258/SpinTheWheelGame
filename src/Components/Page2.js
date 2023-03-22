@@ -53,8 +53,8 @@ const Page2 = (props) => {
 
   return (
     <div className="div-wrapper">
-      <div className="wheel">
-        <img className="union" src={union} alt="union"></img>
+      <div className="spinWheel">
+        <img className="needle" src={union} alt="needle"></img>
         <img
           className="spinner"
           id="spinImage"

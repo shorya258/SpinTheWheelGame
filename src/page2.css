@@ -3,12 +3,11 @@
     margin: 0;
 }
 .div-wrapper{
-    background-color: rgb(198,239,200);
     height: 100vh;
     width: 100vw;
-    background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
     background-repeat:no-repeat;
-    background-size:cover;
+    background: url("images/Group\ 1766.png") top left no-repeat, url("images/Group\ 1767.png") bottom left no-repeat, rgb(198,239,200);
+    background-size: 100%;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
@@ -16,13 +15,13 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.wheel{
+.spinWheel{
     position: relative;
 }
-.wheel .spinner{
+.spinWheel .spinner{
     width: 400px;
  }
- .wheel .union{
+ .spinWheel .needle{
     position: absolute;
     z-index: 2;
     top:50%;
@@ -59,4 +58,13 @@
     height:100vh;
     width: 100vw;
     position: absolute;
+}
+@media screen and (max-width:650px){
+    .div-wrapper{
+        background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
+        background-size: 100%;
+    }
+    .spinWheel .spinner{
+        width: 300px;
+    }
 }
