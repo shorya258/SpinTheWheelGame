@@ -1,5 +1,4 @@
 import "../page2.css";
-// import Page3 from "./Page3";
 import spinner from "../images/Group 801.png";
 import union from "../images/Union.png";
 import spinSound from "../sounds/spinSound.mp3";
@@ -78,16 +77,3 @@ const Page2 = (props) => {
 };
 
 export default Page2;
-// export default function Page2() {
-//
-//   return (
-//     <div className="div-wrapper">
-//       <div className="wheel">
-//         <img src={spinner} alt="spinner"></img>
-//       </div>
-//       <div className="btn">
-//         <button>SPIN</button>
-//       </div>
-//     </div>
-//   );
-// }

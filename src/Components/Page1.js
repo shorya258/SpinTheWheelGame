@@ -36,20 +36,20 @@ const Page1 = () => {
             <span>This is how Engagebud looks like in action!</span>
           </h2>
           <form>
-            <div className="email inps">
+            <div className="email parameter">
               <div className="iconWrapper">
                 <FontAwesomeIcon icon={faEnvelope} size={"xl"} />
               </div>
-              <div className="cntn">
+              <div className="contain-input">
                 <span>Email</span>
                 <input type={"email"} placeholder="Enter an email"></input>
               </div>
             </div>
-            <div className="phonenum inps">
+            <div className="phonenum parameter">
               <div className="iconWrapper">
                 <FontAwesomeIcon icon={faPhone} size={"xl"} />
               </div>
-              <div className="cntn">
+              <div className="contain-input">
                 <span>Phone Number</span>
                 <input placeholder="Enter a phone number"></input>
               </div>
@@ -64,8 +64,7 @@ const Page1 = () => {
               </span>
               <span>Consent is not a condition to purchase. </span>
             </div>
-            {}
-            {/* <Link to="/page2">btn</Link> */}
+
             <div className="luckBtn">
               <button onClick={() => history.push("/page2")}>
                 Try your luck

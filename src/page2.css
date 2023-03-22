@@ -21,7 +21,6 @@
 }
 .wheel .spinner{
     width: 400px;
-    /* height: auto; */
  }
  .wheel .union{
     position: absolute;
@@ -48,8 +47,7 @@
     animation: start-rotate 1s linear infinite;
 }
 @keyframes start-rotate{
-    
-    100%{
+     100%{
         transform: rotate(360deg);
     }
 }

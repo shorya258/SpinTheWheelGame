@@ -8,7 +8,6 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Random /> */}
       <Switch>
         <Route exact path="/">
           <Page1 />

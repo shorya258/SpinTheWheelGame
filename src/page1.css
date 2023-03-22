@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0 ;
     font-family: 'Poppins';
-  
 }
 .container{
     background-color: rgb(198,239,200);
@@ -28,7 +27,6 @@
   }
   .content{
     max-width: 330px;
-    /* background-color: red; */
     margin-left: 120px;
   }
   .wheel{
@@ -48,7 +46,6 @@
     height: 55px;
   }
   .luckBtn button{
-   
     border-radius: 50px;
     background-color: rgb(20,101,49);
     font-weight: bolder;
@@ -58,7 +55,6 @@
     text-decoration: none;
     height: 100%;
   }
-  
   .inps{
     display: flex;
     flex-direction: row;
@@ -69,14 +65,10 @@
   .iconWrapper{
     display: flex;
     align-items: center;
-  
     margin-left: 1rem;
     margin-right: 1rem;
   }
-  /* .inps>div{
-    margin: 2px;
-  } */
-  .cntn{
+  .contain-input{
     cursor: grab;
     display: flex;
     padding: 2px;
@@ -93,18 +85,13 @@
   @media screen and (max-width:750px) {
     .container{
       background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
-      
       background-size: 100%;
-        /* background-image: url("./images/mobile-design1.png"),url("./images/mobile-design.png") !important; */
-        /* background-position: top; */
-        /* background-size:cover; */
-        /* background-repeat: no-repeat; */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        overflow: hidden;
-        flex-wrap: wrap;
-        font-weight: bolder;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      overflow: hidden;
+      flex-wrap: wrap;
+      font-weight: bolder;
     }
     .content{
         margin: 18% 8% ;
