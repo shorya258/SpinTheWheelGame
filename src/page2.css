@@ -59,6 +59,12 @@
     width: 100vw;
     position: absolute;
 }
+@media screen and (max-width:850px) and (min-width:650px) {
+    .div-wrapper{
+        background: url("./images/tablet-view1.png") top left no-repeat, url("./images/tablet-view2.png") bottom left no-repeat, rgb(198,239,200);
+        background-size: 100%;
+    }
+}
 @media screen and (max-width:650px){
     .div-wrapper{
         background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
