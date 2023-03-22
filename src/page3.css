@@ -86,9 +86,12 @@
     .coupon{
         width: 300px;
         position: relative;
-        bottom: 33%;
+        bottom: 27%;
     }
     .coupon h2{
         font-size: 2.2rem;
+    }
+    .close{
+        font-size: 1.1rem !important;
     }
 }

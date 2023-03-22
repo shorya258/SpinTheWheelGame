@@ -12,7 +12,7 @@ const Page3 = (props) => {
   console.log("props pg3", location.state.code, location.state.result);
 
   const handleCopyText = () => {
-    // wcopy discount code to the clipboard
+    // copy discount code to the clipboard
     navigator.clipboard.writeText(myCode);
     window.alert("coupon copied!");
   };

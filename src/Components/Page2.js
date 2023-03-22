@@ -6,8 +6,9 @@ import React, { useState } from "react";
 import Confetti from "react-confetti";
 import { useHistory } from "react-router-dom";
 const Page2 = (props) => {
+  // useHistory function to take user to next page
   let history = useHistory();
-
+  // array "links" for all the possible outcomes of the spin wheel
   const links = [
     "30% sitewide off",
     "Buy 1 get 1 free",
@@ -16,6 +17,7 @@ const Page2 = (props) => {
     "free 50g tea on purchase of 500",
     "hot chocolate free with tea",
   ];
+  // "codes" array for coupon codes to respective "links"
   const codes = [
     "30OFF",
     "BUY1GET1",
@@ -29,20 +31,23 @@ const Page2 = (props) => {
 
   const startRotation = () => {
     audio.play();
+    // sectorDecider gives the value to how many sectors will the first sector  "30% sitewide off" moove
     const sectorDecider = Math.floor(Math.random() * 6 + 1);
+    // "turns" to give the random number of turns the spinner spins
     const turns = Math.floor(Math.random() * 10 + 1) + 0.16667 * sectorDecider;
+    // number of sectors =6 (six possible outcomes)
+    // outcome after spinning= total number of the sectors- how many sectors did the 1st sector move
     const res = 6 - sectorDecider;
-    console.log(links[res]);
     const image = document.getElementById("spinImage");
     image.style.transition = `all 3s`;
     image.style.transform = `rotate(${turns}turn)`;
-    console.log(sectorDecider, turns);
-
+    // show where the wheel stopped  and confetti for 3 seconds
     setTimeout(() => {
       audio.pause();
       setShowConfetti(true);
       setTimeout(() => {
-        console.log("sent props", links[res]);
+        // move to the next page after 5 seconds
+        // send path and props
         history.push({
           pathname: "/page3",
           state: { result: links[res], code: codes[res] },

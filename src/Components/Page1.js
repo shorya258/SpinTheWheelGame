@@ -10,6 +10,7 @@ import { useHistory } from "react-router-dom";
 
 const Page1 = () => {
   let history = useHistory();
+  // assigning different screen widths to different variables to display respective image for respective device later
   const isDesktopOrLaptop = useMediaQuery({
     query: "(max-width: 5554px)",
   });
@@ -21,15 +22,18 @@ const Page1 = () => {
     <>
       <div className="container">
         <div className="wheel">
+          {/* checks if device is laptop and if yes then show image for laptop */}
           {isDesktopOrLaptop && (
             <img src={wheel} className="bigWheel" alt="spin-wheel"></img>
           )}
         </div>
+        {/* checks if device is tablet and if yes then show image for tablet */}
         <div className="tabletWheel">
           {isTablet && (
             <img src={tabletWheel} className="medWheel" alt="spin-wheel"></img>
           )}
         </div>
+        {/* checks if device is mobile and if yes then show image for mobile */}
         <div className="mobilewheel">
           {isMobile && (
             <img
@@ -76,6 +80,7 @@ const Page1 = () => {
             </div>
 
             <div className="luckBtn">
+              {/* on clicking the button user is taken to the next page */}
               <button onClick={() => history.push("/page2")}>
                 Try your luck
               </button>
