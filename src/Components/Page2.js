@@ -10,12 +10,12 @@ const Page2 = (props) => {
   let history = useHistory();
 
   const links = [
-    "30% SITEWIDE OFF",
-    "BUY 1 GET 1 FREE",
-    "FREE COFFEE MUG ON A PURCHASE OF 100+",
-    "BUY 2 EFFERVESCENTS TABLETS & GET 1 FREE",
-    "FREE 50G TEA ON PURCHASE OF 500",
-    "HOT CHOCOLATE FREE WITH TEA",
+    "30% sitewide off",
+    "Buy 1 get 1 free",
+    "free coffee mug on a purchase OF 100+",
+    "buy 2 effervescents tablets & get 1 free",
+    "free 50g tea on purchase of 500",
+    "hot chocolate free with tea",
   ];
   const codes = [
     "30OFF",

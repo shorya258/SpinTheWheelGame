@@ -1,8 +1,8 @@
 *{
     padding: 0;
     margin: 0 ;
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Public Sans', sans-serif; */
+    font-family: 'Poppins';
+  
 }
 .container{
     background-color: rgb(198,239,200);
@@ -12,19 +12,17 @@
     background-repeat:no-repeat;
     background-size:cover;
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;;
     display: flex;
     justify-content:center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    height: 100vh;
   }
   h2 span{
     font-weight:bolder;
     height: 26px;
   }
-  img{
+  .bigWheel{
     width: 400px;
     height: 400px;
   }
@@ -50,7 +48,7 @@
     height: 55px;
   }
   .luckBtn button{
-    padding: 10px 20px;
+   
     border-radius: 50px;
     background-color: rgb(20,101,49);
     font-weight: bolder;
@@ -66,11 +64,18 @@
     flex-direction: row;
     background-color: #fff;
     margin-bottom: 11px;
-    padding: 3px;
+    padding: 7px;
   }
-  .inps>div{
+  .iconWrapper{
+    display: flex;
+    align-items: center;
+  
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  /* .inps>div{
     margin: 2px;
-  }
+  } */
   .cntn{
     cursor: grab;
     display: flex;
@@ -87,10 +92,13 @@
 
   @media screen and (max-width:750px) {
     .container{
-        background-image: url("./images/mobile-design1.png"),url("./images/mobile-design.png") !important;
+      background: url("./images/mobile-design1.png") top left no-repeat, url("./images/mobile-design.png") bottom left no-repeat, rgb(198,239,200);
+      
+      background-size: 100%;
+        /* background-image: url("./images/mobile-design1.png"),url("./images/mobile-design.png") !important; */
         /* background-position: top; */
-        background-size:500px;
-        background-repeat: no-repeat;
+        /* background-size:cover; */
+        /* background-repeat: no-repeat; */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -109,7 +117,6 @@
         display: contents;
     }
     .mobilewheel img{
-        height:180px;
         width: 200px;
     }
     .agreement{

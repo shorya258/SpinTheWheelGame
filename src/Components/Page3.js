@@ -24,20 +24,28 @@ const Page3 = (props) => {
   return (
     <div className="container box">
       <div className="wheel">
-        {isDesktopOrLaptop && <img src={wheel} alt="spin-wheel"></img>}
+        {isDesktopOrLaptop && (
+          <img src={wheel} className="bigWheel" alt="spin-wheel"></img>
+        )}
       </div>
       <div className="mobilewheel">
-        {isTabletOrMobile && <img src={mobilewheel} alt="spin-wheel"></img>}
+        {isTabletOrMobile && (
+          <img src={mobilewheel} className="smallWheel" alt="spin-wheel"></img>
+        )}
       </div>
       <div className="coupon">
-        <div>Congrats you have won:</div>
+        <div>
+          <p>Congrats you have won:</p>
+        </div>
         <h2> {location.state.result}</h2>
         <div className="couponCode">
-          <div className="myCode">{myCode}</div>
-          <div>
+          <div className="myCode">
+            <p>{myCode}</p>
+          </div>
+          <div className="myCopyBtn">
             <Button
-              variant="contained"
               className="copyBtn"
+              variant="contained"
               onClick={handleCopyText}
             >
               COPY
@@ -49,7 +57,7 @@ const Page3 = (props) => {
           className="copyBtn close"
           onClick={handleCopyText}
         >
-          CLOSE PANEL AND COPY
+          Close panel and copy
         </Button>
         <div>
           <span>

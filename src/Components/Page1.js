@@ -17,10 +17,18 @@ const Page1 = () => {
     <>
       <div className="container">
         <div className="wheel">
-          {isDesktopOrLaptop && <img src={wheel} alt="spin-wheel"></img>}
+          {isDesktopOrLaptop && (
+            <img src={wheel} className="bigWheel" alt="spin-wheel"></img>
+          )}
         </div>
         <div className="mobilewheel">
-          {isTabletOrMobile && <img src={mobilewheel} alt="spin-wheel"></img>}
+          {isTabletOrMobile && (
+            <img
+              src={mobilewheel}
+              className="smallWheel"
+              alt="spin-wheel"
+            ></img>
+          )}
         </div>
 
         <div className="content">
@@ -29,8 +37,8 @@ const Page1 = () => {
           </h2>
           <form>
             <div className="email inps">
-              <div>
-                <FontAwesomeIcon icon={faEnvelope} size={"sm"} />
+              <div className="iconWrapper">
+                <FontAwesomeIcon icon={faEnvelope} size={"xl"} />
               </div>
               <div className="cntn">
                 <span>Email</span>
@@ -38,8 +46,8 @@ const Page1 = () => {
               </div>
             </div>
             <div className="phonenum inps">
-              <div>
-                <FontAwesomeIcon icon={faPhone} size={"sm"} />
+              <div className="iconWrapper">
+                <FontAwesomeIcon icon={faPhone} size={"xl"} />
               </div>
               <div className="cntn">
                 <span>Phone Number</span>

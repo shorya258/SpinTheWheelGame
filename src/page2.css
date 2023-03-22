@@ -10,20 +10,25 @@
     background-repeat:no-repeat;
     background-size:cover;
     font-size: 1rem;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
 }
+.wheel{
+    position: relative;
+}
 .wheel .spinner{
-    width: auto;
+    width: 400px;
+    /* height: auto; */
  }
  .wheel .union{
     position: absolute;
     z-index: 2;
-    margin: 12.2% 20% 21% 13.29%;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     align-items: center;
     justify-content: center;
     width: 30px;
