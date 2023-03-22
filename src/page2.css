@@ -3,10 +3,9 @@
     margin: 0;
 }
 .div-wrapper{
-    /* background-color: rgb(198,239,200); */
-    background-color: rebeccapurple;
-    height: 100vh !important;
-    width: 100vw !important;
+    background-color: rgb(198,239,200);
+    height: 100vh;
+    width: 100vw;
     background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
     background-repeat:no-repeat;
     background-size:cover;
@@ -18,14 +17,19 @@
     flex-wrap: wrap;
     align-items: center;
 }
-.wheel img{
+.wheel .spinner{
     width: auto;
  }
- .wheel{
-    
-    outline: solid 1px black;
-} 
-button{
+ .wheel .union{
+    position: absolute;
+    z-index: 2;
+    margin: 12.2% 20% 21% 13.29%;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: auto;
+ }
+.btn button{
     cursor: pointer;
     background-color: rgb(20,101,49);
     color: #fff;

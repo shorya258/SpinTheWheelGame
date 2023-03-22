@@ -2,7 +2,6 @@
 import Page1 from "./Components/Page1";
 import Page2 from "./Components/Page2";
 import Page3 from "./Components/Page3";
-import Random from "./Components/Random";
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
 

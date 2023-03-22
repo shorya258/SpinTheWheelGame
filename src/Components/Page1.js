@@ -2,28 +2,17 @@ import React from "react";
 import "../page1.css";
 import wheel from "../images/well 2.png";
 import mobilewheel from "../images/mobilewell.png";
-// import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useMediaQuery } from "react-responsive";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { useHistory } from "react-router-dom";
 
-export default function Page1() {
+const Page1 = () => {
   let history = useHistory();
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 800px)" });
-  //   var MediaQuery = require("react-responsive");
-  //   handleClick = () => {};
-  //   const [email, setEmail] = useState("");
-  //   const [phonenum, setPhonenum] = useState("");
-  //   handlePhone = (event) => {
-  //     setPhonenum(event.target.value);
-  //   };
-  //   handleEmail = (event) => {
-  //     setEmail(event.target.value);
-  //   };
   return (
     <>
       <div className="container">
@@ -70,11 +59,14 @@ export default function Page1() {
             {}
             {/* <Link to="/page2">btn</Link> */}
             <div className="luckBtn">
-              <a onClick={() => history.push("/page2")}>Try your luck</a>
+              <button onClick={() => history.push("/page2")}>
+                Try your luck
+              </button>
             </div>
           </form>
         </div>
       </div>
     </>
   );
-}
+};
+export default Page1;

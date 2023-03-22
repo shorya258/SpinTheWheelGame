@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Public+Sans:wght@600&display=swap');*{
+*{
     padding: 0;
     margin: 0 ;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Public Sans', sans-serif; */
 }
 .container{
     background-color: rgb(198,239,200);
-    height: 100vh !important;
-    width: 100vw !important;
+    height: 100vh;
+    width: 100vw;
     background-image: url("images/Group\ 1766.png"), url("images/Group\ 1767.png");
     background-repeat:no-repeat;
     background-size:cover;
@@ -42,25 +44,23 @@
     display: flex;
     flex-direction: column;
   }
-  .luckBtn {
+  .luckBtn{
     cursor: pointer;
+    margin-top: 10px;
+    height: 55px;
+  }
+  .luckBtn button{
+    padding: 10px 20px;
+    border-radius: 50px;
     background-color: rgb(20,101,49);
     font-weight: bolder;
     color: #fff;
-    border-radius: 50px;
-    margin: 10px 0px;
-    height: 55px;
-    font-size: 1.4rem;
+    width: 100%;
+    font-size: 1.7rem;
     text-decoration: none;
+    height: 100%;
   }
-  .luckBtn a{
-    font-weight: bolder;
-    color: #fff;
-    padding-top: 20% !important;
-    margin-top: 25%;
-    margin-left: 28%;
-    text-decoration: none;
-  }
+  
   .inps{
     display: flex;
     flex-direction: row;
@@ -88,6 +88,8 @@
   @media screen and (max-width:750px) {
     .container{
         background-image: url("./images/mobile-design1.png"),url("./images/mobile-design.png") !important;
+        /* background-position: top; */
+        background-size:500px;
         background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
