@@ -6,8 +6,10 @@ import mobilewheel from "../images/mobilewell.png";
 import { useLocation } from "react-router-dom";
 import { Button } from "@mui/material";
 import "../page3.css";
+
 const Page3 = (props) => {
   const location = useLocation();
+
   const myCode = location.state.code;
   console.log("props pg3", location.state.code, location.state.result);
 
