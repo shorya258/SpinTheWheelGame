@@ -11,7 +11,7 @@
 .coupon div p{
     text-align: center;
 }
-.coupon h2{
+.coupon .heading{
     font-weight: 900;
     text-align: center;
     font-size: 3rem;
@@ -44,13 +44,13 @@
 }
 .myCopyBtn button{
     width: 100%;
-    padding: 11px 0px !important;
+    padding: 13px 0px !important;
 }
 .copyBtn {
     background-color: rgb(20,101,49) !important;
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
+    font-weight: 500;
     display: flex;
-
 }
 .congoMsg{
     font-size: 1.2rem;
@@ -88,7 +88,7 @@
         position: relative;
         bottom: 27%;
     }
-    .coupon h2{
+    .coupon .heading{
         font-size: 2.2rem;
     }
     .close{

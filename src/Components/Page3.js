@@ -52,7 +52,7 @@ const Page3 = (props) => {
           <p>Congrats you have won:</p>
         </div>
         {/* result of the spin wheel sent as a prop from second page */}
-        <h2> {location.state.result}</h2>
+        <h2 className="heading"> {location.state.result}</h2>
         <div className="couponCode">
           <div className="myCode">
             {/* discount code from the result of the spin wheel game */}

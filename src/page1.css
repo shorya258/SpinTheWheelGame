@@ -17,9 +17,10 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  h2 span{
+  .heading {
     font-weight:bolder;
     height: 26px;
+    margin-bottom: 54px;
   }
   .bigWheel{
     width: 400px;
@@ -56,6 +57,7 @@
     font-size: 1.7rem;
     text-decoration: none;
     height: 100%;
+    border: none;
   }
   .parameter{
     display: flex;
@@ -131,7 +133,6 @@
       justify-content: flex-start;
       overflow: hidden;
       flex-wrap: wrap;
-      font-weight: bolder;
     }
     .content{
         margin: 9% 8% ;
@@ -151,5 +152,7 @@
     }
     .agreement{
         padding: 4px;
+       color: rgb(46, 46, 46);
+
     }
   }

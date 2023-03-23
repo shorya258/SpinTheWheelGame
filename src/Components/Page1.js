@@ -45,8 +45,8 @@ const Page1 = () => {
         </div>
 
         <div className="content">
-          <h2>
-            <span>This is how Engagebud looks like in action!</span>
+          <h2 className="heading">
+            This is how Engagebud looks like in action!
           </h2>
           <form>
             <div className="email parameter">
