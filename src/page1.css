@@ -18,9 +18,8 @@
     flex-wrap: wrap;
   }
   .heading {
-    font-weight:bolder;
-    height: 26px;
-    margin-bottom: 54px;
+    font-weight:900;
+    margin-bottom: auto;
   }
   .bigWheel{
     width: 400px;
@@ -42,10 +41,11 @@
   form{
     display: flex;
     flex-direction: column;
+    margin-top: 1.2rem;
   }
   .luckBtn{
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 1.2rem;
     height: 55px;
   }
   .luckBtn button{
@@ -88,6 +88,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     text-align:center;
+    margin-top: 1.2rem;
   }
   .agreement >span{
     margin-left: 1px;
