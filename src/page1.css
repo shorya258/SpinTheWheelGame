@@ -78,6 +78,16 @@
     padding: 2px;
     flex-direction: column;
   }
+  .contain-input input{
+    margin-top: 0.3rem;
+  }
+  .contain-input input:focus{
+    border: none;
+    outline: none;
+  }
+  .parameter{
+    border-bottom:  1px solid black ;
+  }
   .parameter input{
     border: none;
   }
