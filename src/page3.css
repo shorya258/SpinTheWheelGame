@@ -48,9 +48,9 @@
 }
 .copyBtn {
     background-color: rgb(20,101,49) !important;
-    font-size: 1.3rem !important;
-    font-weight: 500;
     display: flex;
+    font-size: 1.7rem !important;
+    font-weight: 700 !important;
 }
 .congoMsg{
     font-size: 1.2rem;
